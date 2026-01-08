@@ -15,11 +15,11 @@ Deployment-ready applications
 
 ## 📌 Projects Included
 
-1️⃣ Email Spam Detector
+### 1️⃣ Email Spam Detector
 
 A Machine Learning–based application that classifies emails as Spam or Not Spam using NLP techniques.
 
-### Features
+#### Features
 
 Text preprocessing & vectorization
 
@@ -29,7 +29,7 @@ Confidence score for predictions
 
 Flask & Streamlit versions available
 
-### Tech Used
+#### Tech Used
 
 Python
 
@@ -39,11 +39,11 @@ Flask / Streamlit
 
 NLP (TF-IDF, CountVectorizer)
 
-2️⃣ Movie Recommendation System
+### 2️⃣ Movie Recommendation System
 
 A recommendation engine that suggests movies based on user preferences and similarity metrics.
 
-### Features
+#### Features
 
 Content-based filtering
 
@@ -53,7 +53,7 @@ Interactive web interface
 
 Fast recommendations
 
-### Tech Used
+#### Tech Used
 
 Python
 
@@ -63,11 +63,11 @@ Scikit-Learn
 
 Flask / Streamlit
 
-3️⃣ Resume Generator & ATS Checker
+### 3️⃣ Resume Generator & ATS Checker
 
 An intelligent system that generates resumes and checks ATS (Applicant Tracking System) compatibility.
 
-### Features
+#### Features
 
 Resume parsing
 
@@ -77,7 +77,7 @@ Keyword matching
 
 PostgreSQL database integration
 
-### Tech Used
+#### Tech Used
 
 Python
 
@@ -89,11 +89,11 @@ NLP
 
 HTML/CSS
 
-4️⃣ Machine Learning Web Apps (Flask & Streamlit)
+### 4️⃣ Machine Learning Web Apps (Flask & Streamlit)
 
 A collection of ML models deployed as web applications.
 
-### Features
+#### Features
 
 Model deployment
 
@@ -103,7 +103,7 @@ Frontend & backend integration
 
 Streamlit rapid prototyping
 
-### Tech Used
+#### Tech Used
 
 Python
 
