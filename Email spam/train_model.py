@@ -1,13 +1,12 @@
 import pandas as pd
 import pickle
-import os
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.naive_bayes import MultinomialNB
 
 # Load dataset
 df = pd.read_csv("spam.csv", encoding="latin-1")
 
-# Keep first two columns only
+# Keep first two columns
 df = df.iloc[:, :2]
 df.columns = ["label", "message"]
 
@@ -19,20 +18,12 @@ vectorizer = TfidfVectorizer(stop_words="english")
 X = vectorizer.fit_transform(df["message"])
 y = df["label"]
 
-# ✅ MODEL IS DEFINED HERE
+# Train model
 model = MultinomialNB()
-
-# ✅ MODEL IS TRAINED HERE
 model.fit(X, y)
 
-# Ensure backend folder exists
-os.makedirs("backend", exist_ok=True)
+# Save
+pickle.dump(model, open("model.pkl", "wb"))
+pickle.dump(vectorizer, open("vectorizer.pkl", "wb"))
 
-# Save model and vectorizer
-with open("backend/model.pkl", "wb") as f:
-    pickle.dump(model, f)
-
-with open("backend/vectorizer.pkl", "wb") as f:
-    pickle.dump(vectorizer, f)
-
-print("✅ Model and vectorizer saved successfully")
+print("✅ Model trained & saved")
